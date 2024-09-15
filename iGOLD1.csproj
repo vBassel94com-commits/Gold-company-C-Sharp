@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0462FDA7-548A-4A88-B101-1F55B905D62A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iGOLD</RootNamespace>
+    <AssemblyName>iGOLD</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Program Files %28x86%29\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D87527A8A1681F73418ADA7DAFEC199F3594C8DC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>iGOLD_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iGOLD.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>iGOLD.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\DELL\Bunifu UI Framework\Bunifu UI Framework\Bunifu UI_v1.5.3 Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="combit.ListLabel23, Version=23.2.6670.22796, Culture=neutral, PublicKeyToken=a7a30592cb4a94be, processorArchitecture=MSIL" />
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SergeUtils">
+      <HintPath>C:\Users\M\Desktop\TestCombo\SergeUtils\bin\Debug\SergeUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="companyTotalAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="companyTotalAccount.designer.cs">
+      <DependentUpon>companyTotalAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerTotalAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerTotalAccount.designer.cs">
+      <DependentUpon>customerTotalAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerPayment.Designer.cs">
+      <DependentUpon>customerPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="daily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daily.designer.cs">
+      <DependentUpon>daily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoldPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoldPrice.designer.cs">
+      <DependentUpon>GoldPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerEntry.Designer.cs">
+      <DependentUpon>customerEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemEntry.Designer.cs">
+      <DependentUpon>itemEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prop.Designer.cs">
+      <DependentUpon>prop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newDb.Designer.cs">
+      <DependentUpon>newDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customerdb_Class.cs" />
+    <Compile Include="customerDetailsAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerDetailsAccount.Designer.cs">
+      <DependentUpon>customerDetailsAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerEntry1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerEntry1.Designer.cs">
+      <DependentUpon>customerEntry1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dailyPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dailyPayment.Designer.cs">
+      <DependentUpon>dailyPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbClass.cs" />
+    <Compile Include="detailsAccounting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detailsAccounting.Designer.cs">
+      <DependentUpon>detailsAccounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCustomer.Designer.cs">
+      <DependentUpon>editCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editItem.Designer.cs">
+      <DependentUpon>editItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editPayment1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editPayment1.Designer.cs">
+      <DependentUpon>editPayment1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="Itemdb_Class.cs" />
+    <Compile Include="itemEntry1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemEntry1.Designer.cs">
+      <DependentUpon>itemEntry1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_iGOLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_iGOLD.designer.cs">
+      <DependentUpon>main_iGOLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="outcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="outcome.Designer.cs">
+      <DependentUpon>outcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentdb_Class.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="userdb_Class.cs" />
+    <Compile Include="usersAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usersAccount.Designer.cs">
+      <DependentUpon>usersAccount.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="companyTotalAccount.resx">
+      <DependentUpon>companyTotalAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerDetailsAccount.resx">
+      <DependentUpon>customerDetailsAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerEntry1.resx">
+      <DependentUpon>customerEntry1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daily.resx">
+      <DependentUpon>daily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailyPayment.resx">
+      <DependentUpon>dailyPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerTotalAccount.resx">
+      <DependentUpon>customerTotalAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerPayment.resx">
+      <DependentUpon>customerPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detailsAccounting.resx">
+      <DependentUpon>detailsAccounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCustomer.resx">
+      <DependentUpon>editCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editItem.resx">
+      <DependentUpon>editItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editPayment1.resx">
+      <DependentUpon>editPayment1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoldPrice.resx">
+      <DependentUpon>GoldPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerEntry.resx">
+      <DependentUpon>customerEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemEntry.resx">
+      <DependentUpon>itemEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prop.resx">
+      <DependentUpon>prop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newDb.resx">
+      <DependentUpon>newDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemEntry1.resx">
+      <DependentUpon>itemEntry1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_iGOLD.resx">
+      <DependentUpon>main_iGOLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outcome.resx">
+      <DependentUpon>outcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersAccount.resx">
+      <DependentUpon>usersAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Settings_32.png" />
+    <None Include="Resources\icons8_Database_32.png" />
+    <None Include="Resources\icons8_Info_32.png" />
+    <None Include="Resources\icons8_Combo_Chart_321.png" />
+    <None Include="Resources\icons8_Combo_Chart_322.png" />
+    <Content Include="iGOLD.ico" />
+    <Content Include="Resources\icons8_Calculator_32.png" />
+    <Content Include="Resources\icons8_Database_16.png" />
+    <Content Include="Resources\icons8_Info_16.png" />
+    <Content Include="Resources\icons8_Print1_16.png" />
+    <Content Include="Resources\icons8_Print1_32.png" />
+    <Content Include="Resources\icons8_Print_16.png" />
+    <Content Include="Resources\icons8_Search_32.png" />
+    <Content Include="Resources\icons8_Settings_16.png" />
+    <Content Include="Resources\igoldBlack.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\DB.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\Debug\o.xml" />
+    <None Include="Resources\igold331.png" />
+    <None Include="Resources\icons8_User_Account_32.png" />
+    <None Include="Resources\icons8_User_32.png" />
+    <None Include="Resources\icons8_Shutdown_323.png" />
+    <None Include="Resources\icons8_Shutdown_322.png" />
+    <None Include="Resources\icons8_Shutdown_321.png" />
+    <None Include="Resources\icons8_Shutdown_32.png" />
+    <None Include="Resources\icons8_Restaurant_321.png" />
+    <None Include="Resources\icons8_Restaurant_32.png" />
+    <None Include="Resources\icons8_Receive_Cash_32.png" />
+    <None Include="Resources\icons8_Purchase_Order_32.png" />
+    <None Include="Resources\icons8_One_Ring_32.png" />
+    <None Include="Resources\icons8_Money_Transfer_32.png" />
+    <None Include="Resources\icons8_Money_Bag_32.png" />
+    <None Include="Resources\icons8_Minus_321.png" />
+    <None Include="Resources\icons8_Minus_32.png" />
+    <None Include="Resources\icons8_Menu_32.png" />
+    <None Include="Resources\icons8_Maximize_Window_321.png" />
+    <None Include="Resources\icons8_Maximize_Window_32.png" />
+    <None Include="Resources\icons8_Max3imize_Window_32.png" />
+    <None Include="Resources\icons8_Male_User_32.png" />
+    <None Include="Resources\icons8_Jewelry_32.png" />
+    <None Include="Resources\icons8_Jewel_32.png" />
+    <None Include="Resources\icons8_Google_32.png" />
+    <None Include="Resources\icons8_Edit_File_321.png" />
+    <None Include="Resources\icons8_Edit_File_32.png" />
+    <None Include="Resources\icons8_Download1_32.png" />
+    <None Include="Resources\icons8_Download_32.png" />
+    <None Include="Resources\icons8_Delete_File_321.png" />
+    <None Include="Resources\icons8_Delete_File_32.png" />
+    <None Include="Resources\icons8_Delete_32.png" />
+    <None Include="Resources\icons8_Combo_Chart_32.png" />
+    <None Include="Resources\icons8_Close_Window_32.png" />
+    <None Include="Resources\icons8_Cancel1_32.png" />
+    <None Include="Resources\icons8_Cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
